@@ -1,7 +1,7 @@
 # rake db:seed:c80_social_networks_01_fill_types
 
 C80SocialNetworks::Type.delete_all
-C80SocialNetworks::Type.create([
+C80SocialNetworks::Type.create!([
                                    {
                                        id: 1,
                                        title: 'VK',

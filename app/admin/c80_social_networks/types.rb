@@ -19,7 +19,7 @@ ActiveAdmin.register C80SocialNetworks::Type, as: 'Type' do
   index do
     selectable_column
     column :title do |type|
-      "#{draw_social_icon(type.title, type.awesome_icon_code)} <span class='type_title'>#{type.title}</span>".html_safe
+      type_title_html_str(type).html_safe
     end
     column :tag
     column :awesome_icon_code
