@@ -6,15 +6,7 @@ module C80SocialNetworks
 
     storage :file
 
-    process :resize_to_limit => [800, 800]
-
-    version :thumb_big do
-      process :resize_to_fill => [512,384]
-    end
-
-    version :thumb_small do
-      process :resize_to_fill => [256,192]
-    end
+    process :resize_to_limit => [100, 100]
 
     def store_dir
       "uploads/social_networks"
