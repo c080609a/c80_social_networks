@@ -1,0 +1,27 @@
+div.links_list {
+
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      float: left;
+      padding-right: 4px;
+
+      > a {
+        white-space: nowrap;
+
+        -webkit-transition: color 1s ease-out;
+        -moz-transition: color 1s ease-out;
+        -ms-transition: color 1s ease-out;
+        -o-transition: color 1s ease-out;
+        transition: color 1s ease-out;
+        
+      }
+
+    }
+
+  }
+
+}
