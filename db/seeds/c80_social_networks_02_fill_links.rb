@@ -4,16 +4,19 @@ C80SocialNetworks::Link.delete_all
 C80SocialNetworks::Link.create!([
                                     {
                                         id: 1,
+                                        ord: 10,
                                         title: 'Наша группа Вконтакте',
                                         url: 'http://vk.com'
                                     },
                                     {
                                         id: 2,
+                                        ord: 20,
                                         title: 'Мы в инстаграм',
                                         url: 'http://instagram.com'
                                     },
                                     {
                                         id: 3,
+                                        ord: 30,
                                         title: 'Facebook',
                                         url: 'http://facebook.com'
                                     },

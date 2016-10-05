@@ -7,6 +7,7 @@ ActiveAdmin.register C80SocialNetworks::Link, as: 'Link' do
 
   permit_params :title,
                 :url,
+                :ord,
                 :type_ids => []
 
   batch_action :destroy, false
@@ -17,6 +18,7 @@ ActiveAdmin.register C80SocialNetworks::Link, as: 'Link' do
   index do
     selectable_column
     column :title
+    column :ord
     column :url
     column :type do |link|
       res = ''
@@ -33,6 +35,7 @@ ActiveAdmin.register C80SocialNetworks::Link, as: 'Link' do
     f.inputs 'Свойства' do
 
       f.input :title
+      f.input :ord
       f.input :url
       f.input :types,
               :as => :select,
