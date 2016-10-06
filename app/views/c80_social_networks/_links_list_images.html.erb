@@ -1,0 +1,17 @@
+<div class="links_list_images clearfix">
+  <ul class="clearfix">
+    <% links_list.each_with_index do |link, index| %>
+        <li class="link_<%=index%> type_<%= link.type_title %>">
+
+          <%= render_image_link_lazy({ # NOTE:: использует LazyImageHelper
+                                             :alt_image => link.title,
+                                             :image => link.type_image_url,
+                                             :a_href => link.url,
+                                             :a_class => '',
+                                             :target => '_blank'
+                                     }) %>
+
+        </li>
+    <% end %>
+  </ul>
+</div>

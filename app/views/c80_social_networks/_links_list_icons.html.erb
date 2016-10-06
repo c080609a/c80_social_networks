@@ -1,9 +1,9 @@
-<div class="links_list clearfix">
+<div class="links_list_icons clearfix">
   <ul>
     <% links_list.each_with_index do |link, index| %>
         <li class="link_<%=index%> type_<%= link.type_title %>">
           <%= link_to link.url, { target: '_blank', title: link.title } do %>
-            <%= draw_social_icon(link.title, link.type_awesome_icon_code) %>
+            <%= draw_awesome_social_icon(link.title, link.type_awesome_icon_code) %>
           <% end %>
         </li>
     <% end %>

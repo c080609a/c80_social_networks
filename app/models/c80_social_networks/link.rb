@@ -20,5 +20,15 @@ module C80SocialNetworks
       res
     end
 
+    def type_image_url
+      res = ''
+      if self.types.count > 0
+        if self.types.first.image.present?
+          res = self.types.first.image.url
+        end
+      end
+      res
+    end
+
   end
 end

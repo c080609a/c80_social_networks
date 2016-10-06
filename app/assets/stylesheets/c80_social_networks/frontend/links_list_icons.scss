@@ -1,0 +1,11 @@
+.links_list_icons {
+  @extend %links_list;
+
+  > ul {
+    > li {
+      > a {
+        color: #303030;
+      }
+    }
+  }
+}

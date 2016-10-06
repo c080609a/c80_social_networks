@@ -1,0 +1,13 @@
+div.links_list_images {
+  @extend %links_list;
+
+  > ul {
+    > li {
+      > a {
+        > img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
